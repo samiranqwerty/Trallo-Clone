@@ -1,3 +1,4 @@
+import Board from '@/components/Board'
 import Header from '@/components/Header'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <Header/>
 
       {/* Board */}
-     <div>Hello</div>
+     <Board/>
     </main>
   )
 }
