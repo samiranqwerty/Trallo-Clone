@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { MagnifyingGlassIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import "material-icons/iconfont/material-icons.css";
 import Avatar from "react-avatar";
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
             className="flex items-center space-x-5 bg-white rounded-md p-2 shadow-md flex-1 md:flex-initial"
             action=""
           >
-            <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
+            <span className="material-icons text-gray-400 ">search</span>
             <input
               type="text"
               placeholder="Search"
@@ -41,9 +41,13 @@ const Header = () => {
           <Avatar name="Sonny Sangha" round size="50" color="#0760DA" />
         </div>
       </div>
+      <span className="material-symbols-outlined">travel_explore</span>
       <div className="flex items-center justify-center px-5 md:py-5">
         <p className="flex items-center p-5 text-sm font-light pr-5 shadow-xl rounded-xl w-fit bg-white italic max-w-3xl text-[#0760DA]">
-          <UserCircleIcon className="inline-block h-10 w-10 text-[#0760DA] mr-1" />
+
+          <span className="material-icons-round inline-block w-10 text-[#0760DA]">
+            person_search
+          </span>
           GPT is summerising you tasks for the day.....
         </p>
       </div>
